@@ -8,7 +8,8 @@ accordingly.
 In addition to the strength sections, there are also helpful hints provided in the form of a list.
 These hints indicate specific requirements for the password.
 
-You can see a preview of the working application [here]()
+You can see a preview of the working application
+[here](https://lisitsyna-anna.github.io/password-strength-meter/)
 
 ## Password Strength Criteria
 
@@ -46,7 +47,7 @@ To run the PasswordStrengthMeter application locally, please follow the steps be
 4. Start the development server: `npm start`
 5. Open your web browser and visit `http://localhost:4200 `to see the application running.
 
-## ## Contact Information
+## Contact Information
 
 If you have any questions or feedback, please feel free to contact me:
 
