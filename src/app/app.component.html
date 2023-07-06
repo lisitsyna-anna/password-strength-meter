@@ -1,33 +1,37 @@
-<div class="container" style="position: relative">
-  <h1 class="title">{{ title | replace : '-' : ' ' | titlecase }}</h1>
+<div class="container">
+  <main class="main-content">
+    <h1 class="title">{{ title | replace : '-' : ' ' | titlecase }}</h1>
 
-  <h2 class="subtitle">Use this app to check the strength of your password</h2>
+    <h2 class="subtitle">Use this app to check the strength of your password</h2>
 
-  <div class="form-wrapper">
-    <form class="form" [formGroup]="passwordForm">
-      <div class="form-group">
-        <input
-          [type]="showPassword ? 'text' : 'password'"
-          class="form-control"
-          formControlName="password"
-          autocomplete="off"
-          placeholder="Password"
-        />
-        <i
-          [class]="showPassword ? 'fa-sharp fa-solid fa-eye' : 'fa-sharp fa-solid fa-eye-slash'"
-          class="password-icon"
-          (click)="togglePasswordVisibility()"
-        ></i>
+    <div class="form-wrapper">
+      <form class="form" [formGroup]="passwordForm">
+        <div class="form-group">
+          <input
+            [type]="showPassword ? 'text' : 'password'"
+            class="form-control"
+            formControlName="password"
+            autocomplete="off"
+            placeholder="Password"
+          />
+          <i
+            [class]="showPassword ? 'fa-sharp fa-solid fa-eye' : 'fa-sharp fa-solid fa-eye-slash'"
+            class="password-icon"
+            (click)="togglePasswordVisibility()"
+          ></i>
 
-        <app-password-strength
-          [passwordToCheck]="passwordForm.value.password"
-        ></app-password-strength>
-      </div>
-    </form>
-  </div>
+          <app-password-strength
+            [passwordToCheck]="passwordForm.value.password"
+          ></app-password-strength>
+        </div>
+      </form>
+    </div>
+  </main>
 
-  <p class="copyright">
-    Created by &copy;
-    <a href="https://github.com/lisitsyna-anna" class="copyright-link">Anna Lisitsyna</a>
-  </p>
+  <footer>
+    <p class="copyright">
+      Created by &copy;
+      <a href="https://github.com/lisitsyna-anna" class="copyright-link">Anna Lisitsyna</a>
+    </p>
+  </footer>
 </div>
