@@ -1,0 +1,101 @@
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #1d90f4;
+  margin-bottom: 20px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: #282a37;
+  box-shadow: 10px 12px 57px -7px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 10px 12px 57px -7px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 10px 12px 57px -7px rgba(255, 255, 255, 0.75);
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 16px;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid #fefeff;
+  background-color: rgba(50, 54, 69, 255);
+  color: #fefeff;
+  font-size: 18px;
+}
+
+.form-control::placeholder {
+  color: #fefeff;
+}
+
+.password-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright-link {
+  color: rgba(29, 144, 244, 0.7);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .title {
+    margin-top: 100px;
+  }
+
+  .form-wrapper {
+    width: 400px;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 80px;
+  }
+
+  .form-wrapper {
+    width: 500px;
+    height: 450px;
+    padding: 0 40px;
+  }
+}

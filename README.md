@@ -1,27 +1,54 @@
 # PasswordStrengthMeter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+This application is designed to test the strength of passwords. It provides a field for entering a
+password, and below the field, there are three sections that indicate the strength of the password.
+The strength of the password is determined based on specific criteria, and the sections change color
+accordingly.
 
-## Development server
+In addition to the strength sections, there are also helpful hints provided in the form of a list.
+These hints indicate specific requirements for the password.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+You can see a preview of the working application [here]()
 
-## Code scaffolding
+## Password Strength Criteria
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The password strength is determined using the following criteria:
 
-## Build
+- Only letters, digits, or symbols: The password is considered easy.
+- Combination of letters-symbols, letters-digits, or digits-symbols: The password is considered
+  medium.
+- Contains letters, symbols, and numbers: The password is considered strong.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Features
 
-## Running unit tests
+1. Real-time password strength assessment: The application provides instant feedback on the strength
+   of the entered password, updating the strength sections and color indicators in real time as the
+   password is being typed.
+2. Password validation hints: In addition to the strength indicators, the application also provides
+   helpful hints in the form of a list. These hints specify the specific requirements for a strong
+   password, such as minimum length, inclusion of letters, numbers, and symbols.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Responsive design: The application is designed to adapt to different screen sizes and devices,
+   ensuring a seamless user experience on desktop and mobile platforms.
 
-## Running end-to-end tests
+## Technologies Used
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+This application is built using Angular version 16.1.3. The styling is done using CSS, and the logic
+is implemented using TypeScript.
 
-## Further help
+## Installation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To run the PasswordStrengthMeter application locally, please follow the steps below:
+
+1. Clone the repository: `https://github.com/lisitsyna-anna/password-strength-meter`
+2. Navigate to the project directory: `cd password-strength-meter`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open your web browser and visit `http://localhost:4200 `to see the application running.
+
+## ## Contact Information
+
+If you have any questions or feedback, please feel free to contact me:
+
+- Email: [anna.lisicina9309@gmail.com](mailto:anna.lisicina9309@gmail.com)
+- GitHub: [lisitsyna-anna](https://github.com/lisitsyna-anna)
